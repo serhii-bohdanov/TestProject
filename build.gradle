@@ -9,7 +9,7 @@ plugins {
 sourceSets {
     test {
         java {
-            srcDirs = ['src/test/java/UI']
+            srcDirs = ['src/test/java']
         }
     }
 }
@@ -27,6 +27,10 @@ dependencies {
 
     // Playwright dependency
     implementation 'com.microsoft.playwright:playwright:1.42.0'
+
+    implementation 'com.squareup.okhttp3:okhttp:4.9.3'
+
+    implementation 'mysql:mysql-connector-java:8.0.27'
 }
 
 application {
